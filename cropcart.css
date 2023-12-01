@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: x-large;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.crop-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.crop-item {
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    background-color: #ffff99;
+}
+
+.crop-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #367c39;
+}
+
+nav {
+    background-color: #4CAF50; 
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background-color: #367c39;
+}
+
+
+.feature-section, .benefits-section, .more-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.feature-text, .feature-image, .info-item, .info-image, .info-text {
+    flex-basis: 48%; 
+    margin: 10px;
+}
+
+.feature-text h1, .benefits-section h2, .info-item h3, .info-text h3 {
+    color: #4CAF50; 
+}
+
+.feature-text p, .benefit-item p, .info-item p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.benefit-item {
+    text-align: center;
+}
+
+.benefit-item h4 {
+    margin-top: 10px;
+}
+
+.info-item, .info-text, .info-image {
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #367c39; 
+}
+
+hr {
+    border-top: 2px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30%; 
+    object-fit: cover; /
+}
+
+.newsletter-section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f3f3f3; 
+    border-radius: 8px;
+}
+
+.newsletter-section h2 {
+    color: #4CAF50; 
+}
+
+#newsletter-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #4CAF50; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.custom-alert.show {
+    display: block;
+}
+
+.custom-alert p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.crophead {
+    font-family: 'Arial', sans-serif;
+    font-size: 44px; 
+    color: #4CAF50; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    background-image: linear-gradient(45deg, #f0f9e8, #d4e9d7); 
+    border: 2px solid #4CAF50;
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: inline-block;
+    margin: 20px auto; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
